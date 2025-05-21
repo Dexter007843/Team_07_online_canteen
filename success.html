@@ -199,3 +199,39 @@
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Successful | Amity Campus Eats</title>
+  <style>
+    /* Styles here as you gave */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="checkmark"></div>
+    <h1>Payment Successful</h1>
+    <p>Thank you for your order! Your transaction was completed successfully.</p>
+    <div class="details">
+      <p><span>Order ID:</span> #AMT12345678</p>
+      <p><span>Amount Paid:</span> ₹299</p>
+      <p><span>Payment Mode:</span> UPI</p>
+      <p><span>Date & Time:</span> <span id="datetime"></span></p>
+    </div>
+    <button class="button" onclick="goHome()">Return to Homepage</button>
+  </div>
+  <footer>&copy; 2025 Amity Campus Eats. All Rights Reserved.</footer>
+  <script>
+    // Set date/time dynamically
+    const now = new Date();
+    document.getElementById('datetime').innerText = now.toLocaleString();
+    function goHome() {
+      window.location.href = '/index.html';
+    }
+    const sound = new Audio("https://cdn.pixabay.com/download/audio/2021/09/01/audio_91f7854c65.mp3?filename=correct-2-46134.mp3");
+    sound.play().catch(() => {});
+  </script>
+</body>
+</html>
