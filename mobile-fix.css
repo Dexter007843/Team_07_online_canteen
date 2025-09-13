@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .button {
+    padding: 10px 20px;
+  }
+}
